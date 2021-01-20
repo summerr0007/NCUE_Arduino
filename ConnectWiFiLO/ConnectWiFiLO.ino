@@ -23,10 +23,7 @@
 #define SSID        "No ASUS"
 #define PASSWORD    "29887245s"
 SoftwareSerial mySerial(11, 10); // 接收腳, 傳送腳
-ESP8266 wifi(mySerial);
-
-
-//ESP8266 wifi(Serial1);
+ESP8266 wifi(mySerial,115200);
 
 void setup(void)
 {
